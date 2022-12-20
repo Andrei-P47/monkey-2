@@ -11,8 +11,12 @@ module.exports = {
                 'button-gradient-2': '#0038ED',
                 'header-gradient-1': '#B235FF',
                 'header-gradient-2': '#001447',
+                'inner-border': '#EAECF0',
+                'gray-400': '#98A2B3',
             },
-            padding: {},
+            padding: {
+                '19px': '19px',
+            },
             borderRadius: {
                 '66px': '66px',
             },
