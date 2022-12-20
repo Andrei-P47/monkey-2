@@ -1,7 +1,8 @@
-body{
-font-family: Inter, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
+body{
+  font-family: Inter, sans-serif;
+}
 
 .header-logo-gradient{
   background: linear-gradient(101.54deg, #B235FF -9.3%, #001447 70.99%);
@@ -12,3 +13,16 @@ font-family: Inter, sans-serif;
 .header-button-gradient{
   background: linear-gradient(112.62deg, #8D1CFE 29.4%, #0038ED 105.15%);
 }
+
+.hero-title-gradient{
+  background: -webkit-linear-gradient(#8D1CFE, #0038ED);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.discover-nft-button-gradient {
+  background: linear-gradient(112.62deg, #8D1CFE 29.4%, #0038ED 105.15%);;
+}
+
+/*.bor{*/
+/*  -webkit-text-stroke: 1px #675576;*/
+/*}*/
