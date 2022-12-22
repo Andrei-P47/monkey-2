@@ -9,6 +9,7 @@ import {
     SuperHotDrop,
 } from './components'
 import CreateYourNft from './components/CreateYourNft'
+import CreatorOfTheWeek from './components/CreatorOfTheWeek'
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                 <SuperHotDrop />
                 {/*<Aici trebuie sa mai fie ceva*/}
                 <CreateYourNft />
+                <CreatorOfTheWeek />
                 <Footer />
             </div>
         </div>
