@@ -6,6 +6,7 @@ import Artist from './Artist'
 import SuperHotDrop from './SuperHotDrop'
 import CreateYourNft from './CreateYourNft'
 import CreatorOfTheWeek from './CreatorOfTheWeek'
+import JoinOurCommunity from './JoinOurCommunity'
 
 export {
     Header,
@@ -16,4 +17,5 @@ export {
     SuperHotDrop,
     CreateYourNft,
     CreatorOfTheWeek,
+    JoinOurCommunity,
 }

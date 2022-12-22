@@ -3,7 +3,7 @@ import { AngelList, Dribble, GitHub, LinkedIn, Twitter } from '../../images'
 
 const Footer = () => {
     return (
-        <div className="pb-19px text-white pt-[78px]">
+        <div className="pb-19px text-white pt-[78px] mt-[98px]">
             <div className="gap-[125px] flex flex-row pb-[39px]">
                 <div className="flex flex-col items-start gap-[17px]">
                     <div className="font-bold text-[50.52px] leading-[61px]">
