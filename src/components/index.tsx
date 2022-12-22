@@ -7,6 +7,7 @@ import SuperHotDrop from './SuperHotDrop'
 import CreateYourNft from './CreateYourNft'
 import CreatorOfTheWeek from './CreatorOfTheWeek'
 import JoinOurCommunity from './JoinOurCommunity'
+import LiveAucition from './LiveAucition'
 
 export {
     Header,
@@ -18,4 +19,5 @@ export {
     CreateYourNft,
     CreatorOfTheWeek,
     JoinOurCommunity,
+    LiveAucition,
 }
