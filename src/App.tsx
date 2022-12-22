@@ -1,6 +1,13 @@
 import React from 'react'
 import './App.css'
-import { Footer, Header, HeroSection, BrandCompany, Artist } from './components'
+import {
+    Footer,
+    Header,
+    HeroSection,
+    BrandCompany,
+    Artist,
+    SuperHotDrop,
+} from './components'
 
 function App() {
     return (
@@ -10,6 +17,7 @@ function App() {
                 <HeroSection />
                 <Artist />
                 <BrandCompany />
+                <SuperHotDrop />
                 <Footer />
             </div>
         </div>

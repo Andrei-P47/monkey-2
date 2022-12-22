@@ -20,6 +20,7 @@ const HeroSection = () => {
                             src={star}
                             width={85}
                             height={85}
+                            alt="star"
                         />
                     </div>
                 </div>
@@ -42,18 +43,21 @@ const HeroSection = () => {
                     src={first}
                     width={388}
                     height={463}
+                    alt={first}
                 />
                 <img
                     className="rounded-[24px] absolute top-[-55px] left-[-60px]"
                     src={second}
                     width={366}
                     height={437}
+                    alt={second}
                 />
                 <img
                     className="rounded-[24px] absolute bottom-[-60px] right-[-60px]"
                     src={third}
                     width={341}
                     height={407}
+                    alt={third}
                 />
             </div>
         </div>
