@@ -2,7 +2,7 @@ import CreateNft from '../../constants/CreateYourNft'
 
 const CreateYourNft = () => {
     return (
-        <div className="flex flex-col justify-center items-center gap-[34px]">
+        <div className="flex flex-col justify-center items-center gap-[34px] mt-10">
             <div className="font-bold text-[48px] leading-[58px] -tracking-[.02em] text-white">
                 Create Your Sell NFT
             </div>
