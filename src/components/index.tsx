@@ -4,5 +4,14 @@ import BrandCompany from './BrandCompany'
 import HeroSection from './HeroSection'
 import Artist from './Artist'
 import SuperHotDrop from './SuperHotDrop'
+import CreateYourNft from './CreateYourNft'
 
-export { Header, Footer, BrandCompany, HeroSection, Artist, SuperHotDrop }
+export {
+    Header,
+    Footer,
+    BrandCompany,
+    HeroSection,
+    Artist,
+    SuperHotDrop,
+    CreateYourNft,
+}

@@ -8,6 +8,7 @@ import {
     Artist,
     SuperHotDrop,
 } from './components'
+import CreateYourNft from './components/CreateYourNft'
 
 function App() {
     return (
@@ -18,6 +19,8 @@ function App() {
                 <Artist />
                 <BrandCompany />
                 <SuperHotDrop />
+                {/*<Aici trebuie sa mai fie ceva*/}
+                <CreateYourNft />
                 <Footer />
             </div>
         </div>
