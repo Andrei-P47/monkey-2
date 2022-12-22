@@ -10,6 +10,7 @@ import {
 } from './components'
 import CreateYourNft from './components/CreateYourNft'
 import CreatorOfTheWeek from './components/CreatorOfTheWeek'
+import JoinOurCommunity from './components/JoinOurCommunity'
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                 {/*<Aici trebuie sa mai fie ceva*/}
                 <CreateYourNft />
                 <CreatorOfTheWeek />
+                <JoinOurCommunity />
                 <Footer />
             </div>
         </div>
