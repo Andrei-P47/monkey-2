@@ -12,7 +12,7 @@ const HeroSection = () => {
 
     return (
         <div className="container mx-auto px-6 lg:px-0">
-            <div className="flex flex-col lg:flex-row justify-between mt-[48px] lg:mt-[120px] ">
+            <div className="flex flex-col lg:flex-row justify-between pt-[80px] sm:pt-[100px] lg:pt-[120px] ">
                 <div className="flex flex-col gap-[30px] w-auto lg:w-[726px]">
                     <div className="font-extrabold text-[41.77px] lg:text-[94px] leading-[40px] lg:leading-[90px] text-white bor whitespace-pre ">
                         <div>Create Your </div>
@@ -48,7 +48,7 @@ const HeroSection = () => {
                 </div>
                 <div className="relative h-[440px] lg:h-auto top-[105px] lg:top-0 right-0">
                     <img
-                        className="rounded-3xl relative z-40 mx-auto"
+                        className="rounded-3xl relative z-30 mx-auto"
                         src={first}
                         width={lg ? 388 : 240}
                         height={lg ? 463 : 287}
