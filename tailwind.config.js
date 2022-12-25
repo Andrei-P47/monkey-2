@@ -19,12 +19,32 @@ module.exports = {
                 '19px': '19px',
             },
             borderRadius: {
-                '66px': '66px',
+                '1xl': '14px',
+                large: '66px',
             },
             lineHeight: {
                 '19px': '19px',
             },
+            gap: {
+                '13px': '13px',
+                '21px': '21px',
+                '5.5': '22px',
+            },
         },
+        // screens: {
+        //     desktop: '1208px',
+        //     tablet: '768px',
+        //     ceva: '640px',
+        //     mobile: '375px',
+        // },
+        // container: {
+        //     screens: {
+        //         desktop: '1208px',
+        //         tablet: '768px',
+        //         ceva: '640px',
+        //         mobile: '375px',
+        //     },
+        // },
     },
     plugins: [],
 }

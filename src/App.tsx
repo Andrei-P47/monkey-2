@@ -15,8 +15,10 @@ import {
 
 function App() {
     return (
-        <div className="bg-primary-main">
+        <div className="bg-primary-main min-w-[375px]">
+            {/*<div className="fixed">*/}
             <Header />
+            {/*</div>*/}
             <HeroSection />
             <Artist />
             <BrandCompany />

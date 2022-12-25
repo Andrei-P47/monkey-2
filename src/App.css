@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
+
+:root{
+  --secondary-main: #1c51fe
+}
 body{
   font-family: Inter, sans-serif;
+  min-width: 375px;
 }
 
 .header-logo-gradient{
@@ -22,10 +27,93 @@ body{
 .discover-nft-button-gradient {
   background: linear-gradient(112.62deg, #8D1CFE 29.4%, #0038ED 105.15%);
 }
+
+.gradient {
+  background: linear-gradient(112.62deg, #8D1CFE 29.4%, #0038ED 105.15%);
+}
+.primaryPressed{
+  background-color: #39324D;
+}
+
 .bor{
   -webkit-text-stroke: 1px #675576;
 }
 
 .white-border{
   -webkit-text-stroke: 4px #ffffff;
+}
+
+.ellipse-header {
+  background: rgba(214, 34, 218, 0.59);
+  filter: blur(247px);
+}
+
+header .nav-btn{
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 768px){
+  .discover-nft-button-gradient{
+    background : var(--secondary-main)
+  }
+  .hero-title-gradient{
+    background: var(--secondary-main);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bor{
+    -webkit-text-stroke: 0 transparent;
+  }
+}
+
+.fixHeader{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  header .nav-btn{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;justify-content: center;gap: 1.5rem;
+    background-color: #1E1E1E;
+    transition: 1s;
+    transform: translateY(-400vh);
+  }
+
+  header .responsive-nav{
+    transform: none;
+
+  }
+  .remove-scroll{
+    overflow: hidden;
+  }
+  nav .nav-close-btn{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
 }
