@@ -3,9 +3,9 @@ import { AngelList, Dribble, GitHub, LinkedIn, Twitter } from '../../images'
 
 const Footer = () => {
     return (
-        <div className="container mx-auto px-6 lg:px-0">
+        <div className="container mx-auto px-6 xl:px-0">
             <div className="pb-[19px] text-white pt-0 sm:pt-[78px] mt-[64px] sm:mt-[98px]">
-                <div className="gap-[64px] sm:gap-[125px] flex flex-col md:flex-row pb-[39px]">
+                <div className="gap-[64px] lg:gap-[125px] flex flex-col md:flex-row pb-[39px]">
                     <div className="flex flex-col items-start gap-[17px]">
                         <div className="font-bold text-[50.52px] leading-[61px]">
                             <span className="header-logo-gradient">Apollo</span>

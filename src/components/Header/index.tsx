@@ -5,7 +5,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import classNames from 'classnames'
 
 function Header() {
-    const isBigScreen = useMediaQuery({ query: '(min-width: 1024px)' })
+    const isBigScreen = useMediaQuery({ query: '(min-width: 1025px)' })
 
     const navRef = useRef<HTMLElement>(null)
 
@@ -16,7 +16,7 @@ function Header() {
 
     return (
         <div className="bg-primary-main fixHeader z-40">
-            <header className="container mx-auto px-6 lg:px-0 text-white flex items-center bg-primary-main ">
+            <header className="container mx-auto px-6 xl:px-0 text-white flex items-center bg-primary-main ">
                 <div className="flex flex-row justify-between text-white py-3.5 w-full">
                     <div className="font-bold text-[33.2px] leading-10">
                         <span className="header-logo-gradient">Apollo</span>

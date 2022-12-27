@@ -4,8 +4,8 @@ import { useMediaQuery } from 'react-responsive'
 const BrandCompany = () => {
     const isBigScreen = useMediaQuery({ query: '(min-width: 768px)' })
     return (
-        <div className="container mx-auto px-6 lg:px-0">
-            <div className="flex flex-wrap md:flex-row md:justify-between justify-center items-center md:py-6 gap-4 md:gap-[48px]">
+        <div className="container mx-auto px-6 xl:px-0">
+            <div className="flex flex-wrap lg:flex-row lg:justify-between justify-center items-center lg:py-6 gap-4 lg:gap-[48px]">
                 {Brands.map((item) => {
                     return (
                         <img

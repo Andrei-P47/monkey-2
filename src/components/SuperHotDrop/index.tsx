@@ -2,15 +2,9 @@ import ETH from './../../images/ETH.png'
 import SuperHotDrops from '../../constants/SuperHot'
 import { Button } from '../index'
 import { useMediaQuery } from 'react-responsive'
-import { useRef } from 'react'
 
 const SuperHotDrop = () => {
     const isBigScreen = useMediaQuery({ query: '(min-width: 768px)' })
-    const navRef = useRef<HTMLButtonElement>(null)
-
-    const showNavBar = () => {
-        navRef?.current?.classList.toggle('discover-nft-button-gradient')
-    }
 
     function cards(item: any) {
         return (
@@ -43,7 +37,7 @@ const SuperHotDrop = () => {
                         </div>
                     </div>
                 </div>
-                <div className="border-t border-t-[#EDECEC] w-full h-px"></div>
+                <div className="border-t border-t-[#EDECEC] w-full h-px" />
                 <div className="flex flex-row justify-between w-full">
                     <div className="flex flex-col items-start bg-[#BBA5FF]/[.4] rounded-large">
                         <div className="flex flex-row items-start p-1 gap-2.5">
@@ -61,43 +55,44 @@ const SuperHotDrop = () => {
             </div>
         )
     }
+    const buttons = [
+        {
+            title: 'Hope Ape',
+        },
+        {
+            title: 'Abstract',
+        },
+        {
+            title: 'Mongkey',
+        },
+        {
+            title: 'Cars',
+        },
+        {
+            title: 'Art',
+        },
+    ]
 
     return (
-        <div className="container mx-auto px-6 lg:px-0 mb-6">
+        <div className="container mx-auto px-6 xl:px-0 mb-6">
             <div className="flex flex-col justify-center items-start gap-2 md:gap-[34px] mt-[81px] md:mt-[95px]">
                 <div className="font-bold text-[32px] md:text-[48px] leading-[58px] -tracking-[.02em] text-white">
                     Super Hot Drop
                 </div>
                 <div className="flex flex-col items-start gap-[17px] md:gap-[47px] w-full">
                     <div className="flex flex-row items-start gap-5.5 w-full md:w-auto overflow-auto">
-                        <button className="flex flex-row mx-auto w-full md:w-auto justify-center items-center bg-primary-pressed py-4 px-8 gap-2.5 rounded-large">
-                            <div className="font-normal text-[16px] leading-[19px] text-white whitespace-pre">
-                                Hope Ape
-                            </div>
-                        </button>
-                        <button className="flex flex-row mx-auto w-full md:w-auto justify-center items-center bg-primary-pressed py-4 px-8 gap-2.5 rounded-large">
-                            <div className="font-normal text-[16px] leading-[19px] text-white whitespace-pre">
-                                Abstract
-                            </div>
-                        </button>
-                        <button className="flex flex-row mx-auto w-full md:w-auto justify-center items-center bg-primary-pressed py-4 px-8 gap-2.5 rounded-large">
-                            <div className="font-normal text-[16px] leading-[19px] text-white whitespace-pre">
-                                Monkey
-                            </div>
-                        </button>
-                        <button className="flex flex-row mx-auto w-full md:w-auto justify-center items-center bg-primary-pressed py-4 px-8 gap-2.5 rounded-large">
-                            <div className="font-normal text-[16px] leading-[19px] text-white whitespace-pre">
-                                Cars
-                            </div>
-                        </button>
-                        <button className="flex flex-row mx-auto w-full md:w-auto justify-center items-center bg-primary-pressed py-4 px-8 gap-2.5 rounded-large">
-                            <div className="font-normal text-[16px] leading-[19px] text-white whitespace-pre">
-                                Art
-                            </div>
-                        </button>
+                        {buttons.map((item) => {
+                            return (
+                                <button className="flex flex-row mx-auto w-full md:w-auto justify-center items-center bg-[#39324d] btn-gradient py-4 px-8 gap-2.5 rounded-large">
+                                    <div className="font-normal text-4 leading-[19px] text-white whitespace-pre">
+                                        {item.title}
+                                    </div>
+                                </button>
+                            )
+                        })}
                     </div>
                     <div className="flex flex-col justify-center items-center gap-6 md:gap-5 w-auto">
-                        <div className="flex flex-wrap gap-5 items-start text-white">
+                        <div className="flex flex-wrap justify-around md:justify-evenly lg:justify-start gap-5 items-start text-white">
                             {SuperHotDrops.map((item, index) => {
                                 if (!isBigScreen && index < 3) {
                                     return cards(item)

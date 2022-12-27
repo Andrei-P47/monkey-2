@@ -5,14 +5,11 @@ import third from './../../images/HeroCardsImage/3.jpg'
 import { useMediaQuery } from 'react-responsive'
 
 const HeroSection = () => {
-    const ssm = useMediaQuery({ query: '(min-width: 375px)' })
-    const sm = useMediaQuery({ query: '(max-width: 640px)' })
-    const md = useMediaQuery({ query: '(min-width: 768px)' })
     const lg = useMediaQuery({ query: '(min-width: 1024px)' })
 
     return (
-        <div className="container mx-auto px-6 lg:px-0">
-            <div className="flex flex-col lg:flex-row justify-between pt-[80px] sm:pt-[100px] lg:pt-[120px] ">
+        <div className="container mx-auto px-6 xl:px-0">
+            <div className="flex flex-col xl:flex-row justify-between pt-[80px] sm:pt-[100px] lg:pt-[140px] ">
                 <div className="flex flex-col gap-[30px] w-auto lg:w-[726px]">
                     <div className="font-extrabold text-[41.77px] lg:text-[94px] leading-[40px] lg:leading-[90px] text-white bor whitespace-pre ">
                         <div>Create Your </div>
@@ -55,14 +52,14 @@ const HeroSection = () => {
                         alt={first}
                     />
                     <img
-                        className="rounded-3xl absolute -top-[30px] sm:-top-[30px] md:-top-[30px] lg:top-[-55px] sm:left-[130px] md:left-[200px] left-0 lg:left-[-60px]"
+                        className="rounded-3xl absolute -top-[30px] sm:-top-[30px] md:-top-[30px] xl:top-[-55px] sm:left-[130px] md:left-[200px] lg:left-[240px] left-0 xl:left-[-60px]"
                         src={second}
                         width={lg ? 366 : 227}
                         height={lg ? 437 : 271}
                         alt={second}
                     />
                     <img
-                        className="rounded-3xl absolute top-[75px] sm:top-[65px] md:top-[65px] lg:top-[115px] right-0 sm:right-[130px] md:right-[200px] lg:right-[-60px]"
+                        className="rounded-3xl absolute top-[75px] sm:top-[65px] md:top-[65px] lg:top-[90px] xl:top-[115px] right-0 sm:right-[130px] md:right-[200px] lg:right-[250px] xl:right-[-60px]"
                         src={third}
                         width={lg ? 341 : 211}
                         height={lg ? 407 : 252}
