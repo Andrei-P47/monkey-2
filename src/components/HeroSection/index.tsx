@@ -30,11 +30,11 @@ const HeroSection = () => {
                     </div>
                     <div className="flex flex-col lg:flex-row gap-[30px]">
                         <button className="flex flex-row order-last lg:order-first justify-center items-center py-4 lg:py-[47px] px-[10px] gap-2.5 rounded-large md:rounded-[200px] discover-nft-button-gradient">
-                            <span className="font-semibold text-[16px] leading-[26px] text-white flex-none">
+                            <span className="font-semibold text-base leading-6.5 text-white flex-none">
                                 Discover NFT
                             </span>
                         </button>
-                        <div className="font-normal text-[14px] order-first lg:order-last md:text-[16px] leading-[26px] text-white">
+                        <div className="font-normal text-[14px] order-first lg:order-last md:text-base leading-6.5 text-white">
                             The Larges NFT Marketplace. Automatic and truly
                             <br className="hidden md:block" />
                             unique digital creation. Signed and issued by the

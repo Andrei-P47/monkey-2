@@ -22,13 +22,31 @@ module.exports = {
                 '1xl': '14px',
                 large: '66px',
             },
-            lineHeight: {
-                '19px': '19px',
-            },
             gap: {
                 '13px': '13px',
                 '21px': '21px',
-                '5.5': '22px',
+                3.25: '13px',
+                4.25: '17px',
+                5.25: '21px',
+                5.5: '22px',
+                '29px': '29px',
+                8.5: '34px',
+            },
+            margin: {
+                7.5: '30px',
+                13.5: '54px',
+            },
+            fontSize: {
+                '28px': '28px',
+                '32px': '32px',
+            },
+            lineHeight: {
+                '19px': '19px',
+                4.5: '18px',
+                4.75: '19px',
+                6.5: '26px',
+                8.5: '34px',
+                14.5: '58px',
             },
         },
         // screens: {

@@ -21,7 +21,7 @@ function App() {
             <Artist />
             <BrandCompany />
             <SuperHotDrop />
-            <LiveAucition />
+            {/*<LiveAucition />*/}
             <CreateYourNft />
             <CreatorOfTheWeek />
             <JoinOurCommunity />

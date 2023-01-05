@@ -25,5 +25,125 @@ const Brands = [
         source: webflow,
         width: '120',
     },
+    {
+        source: coinbase,
+        width: '135',
+    },
+    {
+        source: spotify,
+        width: '140',
+    },
+    {
+        source: slack,
+        width: '121',
+    },
+    {
+        source: dropbox,
+        width: '163',
+    },
+    {
+        source: webflow,
+        width: '120',
+    },
+    {
+        source: coinbase,
+        width: '135',
+    },
+    {
+        source: spotify,
+        width: '140',
+    },
+    {
+        source: slack,
+        width: '121',
+    },
+    {
+        source: dropbox,
+        width: '163',
+    },
+    {
+        source: webflow,
+        width: '120',
+    },
+    {
+        source: coinbase,
+        width: '135',
+    },
+    {
+        source: spotify,
+        width: '140',
+    },
+    {
+        source: slack,
+        width: '121',
+    },
+    {
+        source: dropbox,
+        width: '163',
+    },
+    {
+        source: webflow,
+        width: '120',
+    },
+    {
+        source: coinbase,
+        width: '135',
+    },
+    {
+        source: spotify,
+        width: '140',
+    },
+    {
+        source: slack,
+        width: '121',
+    },
+    {
+        source: dropbox,
+        width: '163',
+    },
+    {
+        source: webflow,
+        width: '120',
+    },
+    {
+        source: coinbase,
+        width: '135',
+    },
+    {
+        source: spotify,
+        width: '140',
+    },
+    {
+        source: slack,
+        width: '121',
+    },
+    {
+        source: dropbox,
+        width: '163',
+    },
+    {
+        source: webflow,
+        width: '120',
+    },
+    {
+        source: coinbase,
+        width: '135',
+    },
+    {
+        source: spotify,
+        width: '140',
+    },
+    {
+        source: slack,
+        width: '121',
+    },
+    {
+        source: dropbox,
+        width: '163',
+    },
+    {
+        source: webflow,
+        width: '120',
+    },
 ]
 export default Brands

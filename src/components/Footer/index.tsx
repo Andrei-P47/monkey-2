@@ -5,18 +5,18 @@ const Footer = () => {
     return (
         <div className="container mx-auto px-6 xl:px-0">
             <div className="pb-[19px] text-white pt-0 sm:pt-[78px] mt-[64px] sm:mt-[98px]">
-                <div className="gap-[64px] lg:gap-[125px] flex flex-col md:flex-row pb-[39px]">
-                    <div className="flex flex-col items-start gap-[17px]">
+                <div className="gap-16 lg:gap-[125px] flex flex-col md:flex-row pb-[39px]">
+                    <div className="flex flex-col items-start gap-4.25">
                         <div className="font-bold text-[50.52px] leading-[61px]">
                             <span className="header-logo-gradient">Apollo</span>
                             <span className="text-secondary-main">NFT</span>
                         </div>
-                        <div className="font-['Inter'] font-normal text-[18px] leading-[18px] text-[#999999] not-italic w-[279px]">
+                        <div className="font-['Inter'] font-normal text-lg leading-4.5 text-[#999999] not-italic w-[279px]">
                             This growth plan will help you reach your
                             resolutions and achieve the goals you have been
                             striving towards.
                         </div>
-                        <div className="flex flex-row items-center gap-[24px]">
+                        <div className="flex flex-row items-center gap-6">
                             <Twitter
                                 width="24px"
                                 height="24px"
@@ -51,7 +51,7 @@ const Footer = () => {
                     </div>
                     <div className="md:flex md:flex-row grid grid-cols-2 gap-[54px] md:gap-[10px] justify-between w-full">
                         <div className="flex flex-col items-start">
-                            <div className="pb-[20px] text-white font-semibold text-[16px] leading-[19px]">
+                            <div className="pb-[20px] text-white font-semibold text-base leading-4.75">
                                 Marketplace
                             </div>
                             <div className="flex flex-col gap-[9px]">
@@ -67,7 +67,7 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="flex flex-col items-start">
-                            <div className="pb-[20px] text-white font-semibold text-[16px] leading-[19px]">
+                            <div className="pb-[20px] text-white font-semibold text-base leading-4.75">
                                 Resources
                             </div>
                             <div className="flex flex-col gap-[9px]">
@@ -83,7 +83,7 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="flex flex-col items-start">
-                            <div className="pb-[20px] text-white font-semibold text-[16px] leading-[19px]">
+                            <div className="pb-[20px] text-white font-semibold text-base leading-4.75">
                                 Company
                             </div>
                             <div className="flex flex-col gap-[9px]">
@@ -99,7 +99,7 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="flex flex-col items-start">
-                            <div className="pb-[20px] text-white font-semibold text-[16px] leading-[19px]">
+                            <div className="pb-[20px] text-white font-semibold text-base leading-4.75">
                                 Legal
                             </div>
                             <div className="flex flex-col gap-[9px]">

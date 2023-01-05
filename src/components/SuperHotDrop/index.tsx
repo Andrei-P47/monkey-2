@@ -16,11 +16,11 @@ const SuperHotDrop = () => {
                     alt={item.image}
                 />
                 <div className="flex flex-col items-start text-black w-full">
-                    <div className="font-bold text-[18px] leading-[34px] -tracking-[.02em] text-[#242323]">
+                    <div className="font-bold text-lg leading-[34px] -tracking-[.02em] text-[#242323]">
                         {item.title}
                     </div>
                     <div className="flex flex-row justify-between w-full">
-                        <div className="flex flex-row flex-none gap-[6px]">
+                        <div className="flex flex-row flex-none gap-1.5">
                             <img
                                 src={ETH}
                                 width={21}
@@ -76,15 +76,15 @@ const SuperHotDrop = () => {
     return (
         <div className="container mx-auto px-6 xl:px-0 mb-6">
             <div className="flex flex-col justify-center items-start gap-2 md:gap-[34px] mt-[81px] md:mt-[95px]">
-                <div className="font-bold text-[32px] md:text-[48px] leading-[58px] -tracking-[.02em] text-white">
+                <div className="font-bold text-32px md:text-5xl leading-14.5 -tracking-[.02em] text-white">
                     Super Hot Drop
                 </div>
-                <div className="flex flex-col items-start gap-[17px] md:gap-[47px] w-full">
+                <div className="flex flex-col items-start gap-4.25 md:gap-[47px] w-full">
                     <div className="flex flex-row items-start gap-5.5 w-full md:w-auto overflow-auto">
                         {buttons.map((item) => {
                             return (
                                 <button className="flex flex-row mx-auto w-full md:w-auto justify-center items-center bg-[#39324d] btn-gradient py-4 px-8 gap-2.5 rounded-large">
-                                    <div className="font-normal text-4 leading-[19px] text-white whitespace-pre">
+                                    <div className="font-normal text-4 leading-4.75 text-white whitespace-pre">
                                         {item.title}
                                     </div>
                                 </button>
