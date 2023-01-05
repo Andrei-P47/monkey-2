@@ -8,7 +8,7 @@ import CreateYourNft from './CreateYourNft'
 import CreatorOfTheWeek from './CreatorOfTheWeek'
 import JoinOurCommunity from './JoinOurCommunity'
 import LiveAucition from './LiveAucition'
-import Button from './Button';
+import Button from './Button'
 
 export {
     Header,
