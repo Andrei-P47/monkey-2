@@ -2,6 +2,7 @@ import ETH from './../../images/ETH.png'
 import SuperHotDrops from '../../constants/SuperHot'
 import { Button } from '../index'
 import { useMediaQuery } from 'react-responsive'
+import { useCallback, useState } from 'react'
 
 const SuperHotDrop = () => {
     const isBigScreen = useMediaQuery({ query: '(min-width: 768px)' })
@@ -55,23 +56,36 @@ const SuperHotDrop = () => {
             </div>
         )
     }
-    const buttons = [
-        {
-            title: 'Hope Ape',
-        },
-        {
-            title: 'Abstract',
-        },
-        {
-            title: 'Mongkey',
-        },
-        {
-            title: 'Cars',
-        },
-        {
-            title: 'Art',
-        },
-    ]
+
+    const [category, setCategory] = useState('All')
+
+    const allCategory: string[] = []
+    const array: {
+        image: string
+        title: string
+        price: string
+        order: string
+        initialTime: string
+        category: string
+    }[] = []
+
+    const handleSelect = useCallback((name: string) => {
+        setCategory(name)
+    }, [])
+    SuperHotDrops.map((item) => {
+        allCategory.push(item.category)
+    })
+    SuperHotDrops.filter((item) => {
+        if (category === 'All') {
+            array.push(item)
+        }
+        if (item.category === category) {
+            array.push(item)
+        }
+    })
+    const uniqueCategory = allCategory
+        .sort()
+        .filter((item, index, array) => array.indexOf(item) === index)
 
     return (
         <div className="container mx-auto px-6 xl:px-0 mb-6">
@@ -81,11 +95,26 @@ const SuperHotDrop = () => {
                 </div>
                 <div className="flex flex-col items-start gap-4.25 md:gap-[47px] w-full">
                     <div className="flex flex-row items-start gap-5.5 w-full md:w-auto overflow-auto">
-                        {buttons.map((item) => {
+                        <button
+                            onClick={() => handleSelect('All')}
+                            className={`${
+                                category === 'All' ? 'btn-gradient' : ''
+                            } flex flex-row mx-auto w-full md:w-auto justify-center items-center bg-[#39324d]  py-4 px-8 gap-2.5 rounded-large`}
+                        >
+                            <div className="font-normal text-4 leading-4.75 text-white whitespace-pre">
+                                All
+                            </div>
+                        </button>
+                        {uniqueCategory.map((item: any) => {
                             return (
-                                <button className="flex flex-row mx-auto w-full md:w-auto justify-center items-center bg-[#39324d] btn-gradient py-4 px-8 gap-2.5 rounded-large">
+                                <button
+                                    onClick={() => handleSelect(item)}
+                                    className={`${
+                                        category === item ? 'btn-gradient' : ''
+                                    } flex flex-row mx-auto w-full md:w-auto justify-center items-center bg-[#39324d] py-4 px-8 gap-2.5 rounded-large`}
+                                >
                                     <div className="font-normal text-4 leading-4.75 text-white whitespace-pre">
-                                        {item.title}
+                                        {item}
                                     </div>
                                 </button>
                             )
@@ -93,17 +122,12 @@ const SuperHotDrop = () => {
                     </div>
                     <div className="flex flex-col justify-center items-center gap-6 md:gap-5 w-auto">
                         <div className="flex flex-wrap justify-around md:justify-evenly lg:justify-start gap-5 items-start text-white">
-                            {SuperHotDrops.map((item, index) => {
-                                if (!isBigScreen && index < 3) {
-                                    return cards(item)
-                                }
-                                if (isBigScreen) {
-                                    return cards(item)
-                                }
+                            {array.map((item, index) => {
+                                return cards(item)
                             })}
                         </div>
-                        <Button text="View More" />
                     </div>
+                    {array.length >= 5 && <Button text="View More" />}
                 </div>
             </div>
         </div>
