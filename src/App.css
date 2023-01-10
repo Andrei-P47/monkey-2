@@ -181,8 +181,9 @@ header .nav-btn{
     display: flex;
     width: calc(250px * 24);
   }
+@media only screen and (max-width: 1024px) {
+.slider{
+  display: none;
+}
 
-  /*.slide {*/
-  /*  height: 100px;*/
-  /*  width: fit-content;*/
-  /*}*/
+}

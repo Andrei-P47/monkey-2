@@ -2,7 +2,10 @@ import bgImage from './../../images/section-join-community-without-button.jpg'
 
 const JoinOurCommunity = () => {
     return (
-        <div className="container mx-auto relative px-6 xl:px-0">
+        <div
+            className="container mx-auto relative px-6 xl:px-0"
+            id="idCommunity"
+        >
             <div className="w-full h-[211px] md:h-[290px] bg-[#251163] mt-[62px] md:mt-[98px rounded-[10px]"></div>
             {/*<div className="h-[290px] w-full mt-[98px] hidden lg:block">*/}
             {/*    <img*/}

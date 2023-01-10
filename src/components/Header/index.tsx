@@ -28,18 +28,26 @@ function Header() {
                             isBigScreen ? 'flex-row' : 'flex-col'
                         }`}
                     >
-                        <button className="text-white text-base leading-19px font-normal">
-                            Drop
-                        </button>
-                        <button className="text-white text-base leading-19px font-normal">
-                            Marketplace
-                        </button>
-                        <button className="text-white text-base leading-19px font-normal">
-                            Creator
-                        </button>
-                        <button className="text-white text-base leading-19px font-normal">
-                            Community
-                        </button>
+                        <a href="#idDrop">
+                            <button className="text-white text-base leading-19px font-normal">
+                                Drop
+                            </button>
+                        </a>
+                        <a href="#idMarketplace">
+                            <button className="text-white text-base leading-19px font-normal">
+                                Marketplace
+                            </button>
+                        </a>
+                        <a href="#idCreator">
+                            <button className="text-white text-base leading-19px font-normal">
+                                Creator
+                            </button>
+                        </a>
+                        <a href="#idCommunity">
+                            <button className="text-white text-base leading-19px font-normal">
+                                Community
+                            </button>
+                        </a>
                         <button
                             className="nav-btn nav-close-btn"
                             onClick={showNavBar}

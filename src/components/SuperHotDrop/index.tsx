@@ -88,7 +88,7 @@ const SuperHotDrop = () => {
         .filter((item, index, array) => array.indexOf(item) === index)
 
     return (
-        <div className="container mx-auto px-6 xl:px-0 mb-6">
+        <div className="container mx-auto px-6 xl:px-0 mb-6" id="idDrop">
             <div className="flex flex-col justify-center items-start gap-2 md:gap-[34px] mt-[81px] md:mt-[95px]">
                 <div className="font-bold text-32px md:text-5xl leading-14.5 -tracking-[.02em] text-white">
                     Super Hot Drop

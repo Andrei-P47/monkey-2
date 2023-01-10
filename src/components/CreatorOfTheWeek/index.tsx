@@ -27,7 +27,7 @@ const CreatorOfTheWeek = () => {
         )
     }
     return (
-        <div className="container mx-auto px-6 xl:px-0">
+        <div className="container mx-auto px-6 xl:px-0" id="idCreator">
             <div className="flex flex-col justify-center items-start gap-5.5 md:gap-8.5 mt-8 md:mt-[95px]">
                 <div className="font-bold text-32px md:text-5xl leading-14.5 -tracking-[.02em] text-white">
                     Creator of The Week
